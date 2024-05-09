@@ -1,4 +1,5 @@
 import Chart from "../Components/Chart";
+import Navbar from "../Components/Navbar";
 
 export default function DetailInvestPage() {
 
@@ -25,12 +26,14 @@ export default function DetailInvestPage() {
   ];
 
   return (
-    <div >
-      <div className="flex mx-20">
-        <div className="rounded-lg shadow-md bg-white w-full mr-2 pt-5">
+    <div>
+      <Navbar/>
+      <h1 className="px-20 pt-5 pb-2 font-bold text-4xl">Company</h1>
+      <div className="flex px-20">
+        <div className="rounded-lg shadow-lg bg-white w-full pt-5">
           <Chart inputs={{ width: 0, height: 0, dimension: "date", metric: "value", color: "green" }} data={dummy} />
         </div>
-        <div className="rounded-lg shadow-md bg-white p-10 justify-between">
+        <div className="rounded-lg shadow-lg bg-white p-10 ml-2 w-full sm:w-2/3">
           <div>
             <div className="flex">
               <p className="font-bold text-lg">price</p>
@@ -40,7 +43,7 @@ export default function DetailInvestPage() {
             <p className="text-green-500 text-sm">pasar buka</p>
           </div>
           <div>
-            <p className="text-bold">Kinerja</p>
+            <p className="font-bold">kinerja</p>
             <div className="flex justify-between my-2">
               <button className="bg-gray-200 py-1 px-5 rounded-lg">1 W</button>
               <button className="bg-gray-200 py-1 px-5 rounded-lg">1 M</button>
@@ -52,8 +55,29 @@ export default function DetailInvestPage() {
               <button className="bg-gray-200 py-1 px-5 rounded-lg">1 Y</button>
             </div>
           </div>
-          <div>
-          <button className=" px-24 py-2 mb-4 rounded-lg bg-green-600 text-white font-bold">Buy</button>
+        </div>
+      </div>
+      <h1 className="px-20 pt-32 pb-10 font-semibold text-2xl">Berita Terkini</h1>
+      <div className="flex justify-between px-20">
+        <div className="rounded-lg shadow-md bg-white">
+          <img className="w-full" src="" alt="image" />
+          <div className="p-2">
+            <h3 className="font-semibold">Title</h3>
+            <p className="">Some description about the content.</p>
+          </div>
+        </div>
+        <div className="rounded-lg shadow-md bg-white">
+          <img className="w-full" src="" alt="image" />
+          <div className="p-2">
+            <h3 className="font-semibold">Title</h3>
+            <p className="">Some description about the content.</p>
+          </div>
+        </div>
+        <div className="rounded-lg shadow-md bg-white">
+          <img className="w-full" src="" alt="image" />
+          <div className="p-2">
+            <h3 className="font-semibold">Title</h3>
+            <p className="">Some description about the content.</p>
           </div>
         </div>
       </div>
