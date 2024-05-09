@@ -2,13 +2,16 @@ import BGMAINMENU from "../images/BGMAINMENU.png";
 import IMGStartUp from "../images/IMGStartUp.png";
 import IMGInvestment from "../images/IMGInvestment.png";
 import Logo from "../images/Logo.svg";
+import Navbar from "../Components/Navbar";
 
 export default function MainMenu() {
 
     return (
-        <div className="bg-cover bg-center px-20" style={{ backgroundImage: `url(${BGMAINMENU})` }}>
+        <div>
+        <div className="bg-cover bg-center" style={{ backgroundImage: `url(${BGMAINMENU})` }}>
+        <Navbar/>
             {/* tittle */}
-            <div className="rounded-lg bg-gray-500 p-20">
+            <div className="rounded-lg bg-gray-500 p-20 mt-10">
                 <img src="" alt="image" />
             </div>
             <h2 className="p-8 pt-20 text-center text-green-600 font-bold text-3xl">What's Going On?</h2>
@@ -47,5 +50,6 @@ export default function MainMenu() {
                 </div>
             </div>
         </div>
+    </div>
     );
 }
