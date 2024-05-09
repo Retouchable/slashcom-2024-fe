@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import tick from "../images/tick.svg";
 import BGHome from "../images/BGHome.svg";
-
+import { Link } from "react-router-dom";
 
 
 const HomePage = () => {
@@ -21,16 +21,16 @@ const HomePage = () => {
         <p className="text-lg font-normal pl-20">startup dengan tema lingkungan di seluruh dunia.</p>
       </div>
 
-      <div className="pl-[1000px] pt-[50px] absolute">
+      <div className="pl-[1000px] pt-[50px]">
         <img src={tick}></img>
       </div>
 
-      <div className="pl-28 pt-96">
+      <div className="pl-28 -mt-[20px] ">
         <button className='px-24 py-4 mb-4 rounded-md bg-green-600 text-white text-3xl font-bold w-96 "'>
-          mulai
+        <Link to="/register">mulai</Link>
         </button>
       </div>
-      <div className="pl-[50px]  pt-[44px]">
+      <div className="pl-[50px] pt-[5px]">
         <img src={BGHome}></img>
       </div>
     </header>
