@@ -3,6 +3,8 @@ import Navbar from "../Components/Navbar";
 import tick from "../images/tick.svg";
 import BGHome from "../images/BGHome.svg";
 
+
+
 const HomePage = () => {
   return (
     <header>
