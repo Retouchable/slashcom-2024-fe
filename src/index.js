@@ -8,6 +8,7 @@ import LoginPage from './Pages/LoginPage';
 import RegisterPage from './Pages/RegisterPage';
 import MainMenu from './Pages/MainMenu'
 import HomePage from './Pages/HomePage'
+import DetailInvestPage from './Pages/DetailInvestPage';
 
 const router = createBrowserRouter([
   {
@@ -20,11 +21,15 @@ const router = createBrowserRouter([
   },
   {
     path: '/mainMenu',
-    element: <MainMenu/>
+    element: <MainMenu />
   },
   {
     path: '/',
-    element: <HomePage/>
+    element: <HomePage />
+  },
+  {
+    path: '/detailInvest',
+    element: <DetailInvestPage />
   },
 ]);
 
