@@ -6,16 +6,26 @@ import reportWebVitals from './reportWebVitals';
 import './input.css';
 import LoginPage from './Pages/LoginPage';
 import RegisterPage from './Pages/RegisterPage';
+import MainMenu from './Pages/MainMenu'
+import HomePage from './Pages/HomePage'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/login',
     element: <LoginPage />,
   },
   {
     path: '/register',
     element: <RegisterPage />,
-  }
+  },
+  {
+    path: '/mainMenu',
+    element: <MainMenu/>
+  },
+  {
+    path: '/',
+    element: <HomePage/>
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
