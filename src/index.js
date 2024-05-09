@@ -9,6 +9,7 @@ import RegisterPage from './Pages/RegisterPage';
 import MainMenu from './Pages/MainMenu'
 import HomePage from './Pages/HomePage'
 import DetailInvestPage from './Pages/DetailInvestPage';
+import StartUpInformationPage from './Pages/StartUpInformationPage';
 
 const router = createBrowserRouter([
   {
@@ -28,8 +29,12 @@ const router = createBrowserRouter([
     element: <HomePage />
   },
   {
-    path: '/detailInvest',
+    path: '/detailInvestmentPage',
     element: <DetailInvestPage />
+  },
+  {
+    path: '/startupInformationPage',
+    element: <StartUpInformationPage />
   },
 ]);
 
