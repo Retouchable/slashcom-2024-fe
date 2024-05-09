@@ -11,11 +11,11 @@ export default function MainMenu() {
         <div className="bg-cover bg-center" style={{ backgroundImage: `url(${BGMAINMENU})` }}>
         <Navbar/>
             {/* tittle */}
-            <div className="rounded-lg bg-gray-500 p-20 mt-10">
+            <div className="rounded-lg bg-gray-500 p-20 mt-10 ml-28 w-[1300px]">
                 <img src="" alt="image" />
             </div>
             <h2 className="p-8 pt-20 text-center text-green-600 font-bold text-3xl">What's Going On?</h2>
-            <div className="flex justify-between">
+            <div className="flex justify-between pl-28">
                 <div className="rounded-lg shadow-md bg-white">
                     <img className="w-full" src={Logo} alt="image" />
                     <div className="p-2">
@@ -23,6 +23,7 @@ export default function MainMenu() {
                         <p className="">Some description about the content.</p>
                     </div>
                 </div>
+
                 <div className="rounded-lg shadow-md bg-white">
                     <img className="w-full" src={Logo} alt="image" />
                     <div className="p-2">
@@ -30,7 +31,7 @@ export default function MainMenu() {
                         <p className="">Some description about the content.</p>
                     </div>
                 </div>
-                <div className="rounded-lg shadow-md bg-white">
+                <div className="rounded-lg shadow-md bg-white mr-[100px]">
                     <img className="w-full" src={Logo} alt="image" />
                     <div className="p-2">
                         <h3 className="font-semibold">Title</h3>
